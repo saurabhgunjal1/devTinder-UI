@@ -109,7 +109,7 @@ export default function Login() {
                   type="text"
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
-                  placeholder="Elon"
+                  placeholder="firstName"
                   className="input input-bordered w-full bg-black/40"
                   required
                 />
@@ -123,7 +123,7 @@ export default function Login() {
                   type="text"
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
-                  placeholder="Musk"
+                  placeholder="lastName"
                   className="input input-bordered w-full bg-black/40"
                   required
                 />
