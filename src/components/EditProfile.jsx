@@ -24,7 +24,7 @@ export default function EditProfile({ userData = {} }) {
   const [profile, setProfile] = useState({
     firstName: userData.firstName || "",
     lastName: userData.lastName || "",
-    gender: userData.gender || "Male",
+    gender: userData.gender || "male",
     age: userData.age || "",
     photoUrl: userData.photoUrl || "",
     about: userData.about || "",
