@@ -79,6 +79,9 @@ export default function NavBar() {
             <li>
               <Link to={"/connections"}>Connections</Link>
             </li>
+            <li>
+              <Link to={"/premium"}>Premium</Link>
+            </li>
 
             <div className="divider my-1"></div>
 
