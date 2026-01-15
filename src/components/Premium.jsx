@@ -58,7 +58,7 @@ export default function Premium() {
     <>
       {isPremium ? (
         <div className="w-full min-h-screen bg-base-300 text-base-content flex flex-col items-center py-12">
-          <h6>You are already a primeum user</h6>
+          <h6>You are already a Premium user👑.</h6>
         </div>
       ) : (
         <div className="w-full min-h-screen bg-base-300 text-base-content flex flex-col items-center py-12">
