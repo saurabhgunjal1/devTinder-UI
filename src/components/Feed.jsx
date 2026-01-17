@@ -41,7 +41,7 @@ export default function Feed() {
   }
 
   return (
-    <div className="relative flex flex-1 items-center justify-center bg-gradient-to-br from-[#0f172a] via-[#020617] to-[#020617] overflow-hidden">
+    <div className="relative flex flex-1 items-center justify-center bg-gradient-to-br from-[#0f172a] via-[#020617] to-[rgb(2,6,23)] overflow-hidden">
       {/* Glow blobs */}
       <div className="absolute w-96 h-96 bg-pink-500/20 rounded-full blur-3xl top-10 left-10 animate-pulse"></div>
       <div className="absolute w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl bottom-10 right-10 animate-pulse"></div>

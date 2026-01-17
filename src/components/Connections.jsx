@@ -3,7 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { BASE_URL } from "../utils/constants";
 import axios from "axios";
 import { addConnections } from "../utils/connectionsSlice";
-import { FaTimes, FaUserAstronaut } from "react-icons/fa";
+import { FaCommentDots, FaTimes, FaUserAstronaut } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Connections() {
   const dispatch = useDispatch();
@@ -119,29 +120,43 @@ export default function Connections() {
                   ))}
                 </div>
 
-                <div className="flex gap-3 mt-4 w-full">
+                <div className="flex gap-2 mt-4 w-full">
+                  {/* Remove Button */}
                   <button
                     onClick={() => handleDeleteConnection(user.connectionId)}
                     className="
-      /* Layout: Full width on mobile, auto width on tablets+ */
-      flex-1 sm:flex-none
-      flex items-center justify-center gap-2 
-      px-4 py-2 sm:px-6 
-      
-      /* Styling */
-      btn btn-error rounded-xl shadow-md
-      border-none transition-all duration-200
-      
-      /* Typography: Smaller text on mobile to prevent wrapping */
-      text-sm sm:text-base md:text-lg font-medium
-      
-      /* Interaction */
-      hover:scale-105 active:scale-95
+      flex-1
+      btn btn-error text-white
+      rounded-xl shadow-lg
+      flex items-center justify-center gap-2
+      px-2 sm:px-3 py-2
+      text-xs sm:text-sm md:text-base
+      whitespace-nowrap
+      hover:scale-105 transition-all
     "
                   >
                     <FaTimes className="text-sm sm:text-base" />
-                    <span className="whitespace-nowrap">Remove Connection</span>
+                    <span>Remove</span>
                   </button>
+
+                  {/* Chat Button */}
+                  <Link to={"/chat/" + user.user._id} className="flex-1">
+                    <button
+                      className="
+        w-full
+        btn btn-success text-white
+        rounded-xl shadow-lg
+        flex items-center justify-center gap-2
+        px-2 sm:px-3 py-2
+        text-xs sm:text-sm md:text-base
+        whitespace-nowrap
+        hover:scale-105 transition-all
+      "
+                    >
+                      <FaCommentDots className="text-sm sm:text-base" />
+                      <span>Chat</span>
+                    </button>
+                  </Link>
                 </div>
               </div>
 
