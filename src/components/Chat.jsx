@@ -121,7 +121,7 @@ export default function Chat() {
       <div
         className="
   w-full
-  h-[90vh] sm:h-[75vh]
+  h-[85vh] sm:h-[75vh]
   max-w-full sm:max-w-2xl
   bg-base-100
   sm:rounded-3xl
